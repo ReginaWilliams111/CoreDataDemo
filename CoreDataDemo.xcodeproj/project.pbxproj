@@ -14,6 +14,7 @@
 		4AC79DC227D54BB600B93461 /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AC79DC027D54BB600B93461 /* CoreDataDemo.xcdatamodeld */; };
 		4AC79DC427D54BBB00B93461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC79DC327D54BBB00B93461 /* Assets.xcassets */; };
 		4AC79DC727D54BBB00B93461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC79DC527D54BBB00B93461 /* LaunchScreen.storyboard */; };
+		4AC79DD427D54F9E00B93461 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC79DD327D54F9E00B93461 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4AC79DC327D54BBB00B93461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AC79DC627D54BBB00B93461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AC79DC827D54BBB00B93461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AC79DD327D54F9E00B93461 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		4AC79DAB27D54BB500B93461 = {
 			isa = PBXGroup;
 			children = (
+				4AC79DD227D54D8A00B93461 /* Model */,
 				4AC79DB627D54BB600B93461 /* CoreDataDemo */,
 				4AC79DB527D54BB600B93461 /* Products */,
 			);
@@ -68,6 +71,14 @@
 				4AC79DC027D54BB600B93461 /* CoreDataDemo.xcdatamodeld */,
 			);
 			path = CoreDataDemo;
+			sourceTree = "<group>";
+		};
+		4AC79DD227D54D8A00B93461 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4AC79DD327D54F9E00B93461 /* Person.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AC79DD427D54F9E00B93461 /* Person.swift in Sources */,
 				4AC79DBC27D54BB600B93461 /* ViewController.swift in Sources */,
 				4AC79DC227D54BB600B93461 /* CoreDataDemo.xcdatamodeld in Sources */,
 				4AC79DB827D54BB600B93461 /* AppDelegate.swift in Sources */,
