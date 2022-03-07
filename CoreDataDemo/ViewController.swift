@@ -29,7 +29,19 @@ class ViewController: UIViewController {
     func fetchPeople() {
         //  Fetch the data from the Coredata to display in the tableview
         do {
-            self.items = try context.fetch(Person.fetchRequest())
+            
+            let request = Person.fetchRequest() as NSFetchRequest<Person>
+            
+            //  Set filtering and sorting on the request
+            //let pred = NSPredicate(format: "name CONTAINS %@", "Regina")
+            //request.predicate = pred
+            //self.items = try context.fetch(request)
+            
+            //Sorting
+            let sort = NSSortDescriptor(key: "name", ascending: true)
+            request.sortDescriptors = [sort]
+            
+            self.items = try context.fetch(request)
             
             DispatchQueue.main.async {
                 self.tableView.reloadData()
